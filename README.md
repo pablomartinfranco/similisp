@@ -9,6 +9,8 @@ pre {
 - Domain specific language similar to lisp.
 
 ### Backus–Naur specification
+
+#### Alphabet tokens:
 ```
 LETRA    = {a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, 
             A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z}
@@ -18,7 +20,7 @@ ESPECIAL = {+, -, *, /, <, >, =, _}
 DIGITO   = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 ```
 
-#### Categorias Lexicas:
+#### Lexical tokens:
 <!---
 NUMERO  -> ER: -?[0-9]*(,[0-9]*)?
 (0+1+2+3+4+5+6+7+8+9)(0+1+2+3+4+5+6+7+8+9)*+((0+1+2+3+4+5+6+7+8+9)(0+1+2+3+4+5+6+7+8+9)*,(0+1+2+3+4+5+6+7+8+9)*)+(-(0+1+2+3+4+5+6+7+8+9)(0+1+2+3+4+5+6+7+8+9)*)+(-(0+1+2+3+4+5+6+7+8+9)(0+1+2+3+4+5+6+7+8+9)*,(0+1+2+3+4+5+6+7+8+9)*)
@@ -34,22 +36,22 @@ SIMBOLO -> ER: [a-zA-Z][\+\-\*\/\<\>\=\_][a-zA-Z]*[\+\-\*\/\<\>\=\_]*[0-9]*
 ```
 VACIO   -> ER: () + nil
 ```
-<!--![](02-Scanner/images/afd-vacio.jpg)-->
-<img src="02-Scanner/images/afd-vacio.jpg" height="250">
+<!--![](02-Scanner/img/afd-vacio.jpg)-->
+<img src="02-Scanner/img/afd-vacio.jpg" height="250">
 
 ```
 NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
 ```
-<!--![](02-Scanner/images/afd-numero.JPG)-->
-<img src="02-Scanner/images/afd-numero.JPG" height="250">
+<!--![](02-Scanner/img/afd-numero.JPG)-->
+<img src="02-Scanner/img/afd-numero.JPG" height="250">
 
 ```
 SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 ```
-<!--![](02-Scanner/images/afd-simbolo.jpg)-->
-<img src="02-Scanner/images/afd-simbolo.jpg" height="220">
+<!--![](02-Scanner/img/afd-simbolo.jpg)-->
+<img src="02-Scanner/img/afd-simbolo.jpg" height="220">
 
-#### Categorias Sintacticas:
+#### Sintactic tokens:
 ```
 ATOMO, LISTA, EXPRESION
 ```
