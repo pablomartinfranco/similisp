@@ -34,20 +34,20 @@ SIMBOLO -> ER: [a-zA-Z][\+\-\*\/\<\>\=\_][a-zA-Z]*[\+\-\*\/\<\>\=\_]*[0-9]*
 ```
 VACIO   -> ER: () + nil
 ```
-<!--![](03-Parser/images/afd-vacio.jpg)-->
-<img src="03-Parser/images/afd-vacio.jpg" height="250">
+<!--![](02-Scanner/images/afd-vacio.jpg)-->
+<img src="02-Scanner/images/afd-vacio.jpg" height="250">
 
 ```
 NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
 ```
-<!--![](03-Parser/images/afd-numero.JPG)-->
-<img src="03-Parser/images/afd-numero.JPG" height="250">
+<!--![](02-Scanner/images/afd-numero.JPG)-->
+<img src="02-Scanner/images/afd-numero.JPG" height="250">
 
 ```
 SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 ```
-<!--![](03-Parser/images/afd-simbolo.jpg)-->
-<img src="03-Parser/images/afd-simbolo.jpg" height="220">
+<!--![](02-Scanner/images/afd-simbolo.jpg)-->
+<img src="02-Scanner/images/afd-simbolo.jpg" height="220">
 
 #### Categorias Sintacticas:
 ```
