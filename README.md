@@ -6,9 +6,7 @@ pre {
 -->
 ## SimiLisp domain specific language
 
-- Domain specific language similar to lisp.
-
-### Backus–Naur specification
+### Domain specific language similar to lisp
 
 #### Alphabet tokens:
 ```
