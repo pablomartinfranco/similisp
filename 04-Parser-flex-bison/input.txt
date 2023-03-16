@@ -1,0 +1,5 @@
+(defun doble (x) (x + x))
+(doble 2)
+((())(2 2 2)2 2 2)
+(sum ( 2 2 2(doble 2)2 2))
+
