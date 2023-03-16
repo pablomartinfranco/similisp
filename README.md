@@ -98,7 +98,7 @@ __NUMERO  ::= DIGITO
 
 ```
 
-## Examples:
+## Sintax example:
 
 ```common-lisp
 > (+ . 1 . 2)
