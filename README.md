@@ -52,7 +52,7 @@ SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 ATOMO, LISTA, EXPRESION
 ```
 
-### Sintactic structure BNF (Parser)
+#### Sintactic structure BNF (Parser)
 
 ```bnf
 
