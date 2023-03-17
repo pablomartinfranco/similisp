@@ -32,20 +32,20 @@ SIMBOLO -> ER: [a-zA-Z][\+\-\*\/\<\>\=\_][a-zA-Z]*[\+\-\*\/\<\>\=\_]*[0-9]*
 ```
 VACIO   -> ER: () + nil
 ```
-<!--![](02-Scanner/img/afd-vacio.jpg)-->
-<img src="02-Scanner/img/afd-vacio.jpg" height="250">
+<!--![](02-scanner/img/afd-vacio.jpg)-->
+<img src="02-scanner/img/afd-vacio.jpg" height="250">
 
 ```
 NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
 ```
-<!--![](02-Scanner/img/afd-numero.JPG)-->
-<img src="02-Scanner/img/afd-numero.JPG" height="250">
+<!--![](02-scanner/img/afd-numero.jpg)-->
+<img src="02-scanner/img/afd-numero.jpg" height="250">
 
 ```
 SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 ```
-<!--![](02-Scanner/img/afd-simbolo.jpg)-->
-<img src="02-Scanner/img/afd-simbolo.jpg" height="220">
+<!--![](02-scanner/img/afd-simbolo.jpg)-->
+<img src="02-scanner/img/afd-simbolo.jpg" height="220">
 
 #### Syntactic tokens (Parser):
 ```
