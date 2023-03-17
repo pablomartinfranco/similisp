@@ -47,12 +47,12 @@ SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 <!--![](02-Scanner/img/afd-simbolo.jpg)-->
 <img src="02-Scanner/img/afd-simbolo.jpg" height="220">
 
-#### Sintactic tokens (Parser):
+#### Syntactic tokens (Parser):
 ```
 ATOMO, LISTA, EXPRESION
 ```
 
-#### Sintactic structure BNF (Parser)
+#### Syntactic structure BNF (Parser)
 
 ```bnf
 
