@@ -69,11 +69,14 @@ ATOMO     ::= SIMBOLO
             | NUMERO
             | VACIO
           
-SIMBOLO   ::= LETRA
-            | TERMINAL
-            | LETRA SIMBOLO
-            | TERMINAL SIMBOLO
-            | DIGITO SIMBOLO
+SIMBOLO   ::= _
+            | LETRA
+            | _ _SIMBOLO
+            | LETRA _SIMBOLO
+            
+_SIMBOLO  ::= _ _SIMBOLO
+            | LETRA _SIMBOLO
+            | DIGITO _SIMBOLO
      
 VACIO     ::= () | nil
 
@@ -82,7 +85,7 @@ LETRA     ::= a | b | c | d | e | f | g | h | i | j | k | l | m
             | A | B | C | D | E | F | G | H | I | J | K | L | M 
             | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
             
-TERMINAL  ::= + | - | * | / | < | > | = | _
+TERMINAL  ::= + | - | * | / | < | > | = | _ | ( | ) | , | .
             
 DIGITO    ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
