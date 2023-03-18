@@ -74,7 +74,10 @@ SIMBOLO   ::= _
             | _ _SIMBOLO
             | LETRA _SIMBOLO
             
-_SIMBOLO  ::= _ _SIMBOLO
+_SIMBOLO  ::= _
+            | LETRA
+            | DIGITO
+            | _ _SIMBOLO
             | LETRA _SIMBOLO
             | DIGITO _SIMBOLO
      
