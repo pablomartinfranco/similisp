@@ -31,19 +31,19 @@ SIMBOLO -> ER: [a-zA-Z][\+\-\*\/\<\>\=\_][a-zA-Z]*[\+\-\*\/\<\>\=\_]*[0-9]*
 
 #### Syntactic tokens (Parser):
 ```
-VACIO   -> ER: () + nil
+VACIO   -> ER: '()' + 'nil'
 ```
 <!--![](02-scanner/img/afd-vacio.jpg)-->
 <img src="02-scanner/img/afd-vacio.jpg" height="250">
 
 ```
-NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
+NUMERO  -> ER: DIGITO* + DIGITO* ',' DIGITO* + '-' DIGITO* + '-' DIGITO* ',' DIGITO*
 ```
 <!--![](02-scanner/img/afd-numero.jpg)-->
 <img src="02-scanner/img/afd-numero.jpg" height="250">
 
 ```
-SIMBOLO -> ER: (_ + LETRA) (_ + - + LETRA + NUMERO)*
+SIMBOLO -> ER: ('_' + LETRA) ('_' + '-' + LETRA + NUMERO)*
 ```
 <!--![](02-scanner/img/afd-simbolo.jpg)-->
 <img src="02-scanner/img/afd-simbolo.jpg" height="220">
