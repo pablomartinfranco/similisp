@@ -43,7 +43,7 @@ NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
 <img src="02-scanner/img/afd-numero.jpg" height="250">
 
 ```
-SIMBOLO -> ER: (LETRA + TERMINAL) (LETRA + TERMINAL + NUMERO)*
+SIMBOLO -> ER: (_ + LETRA) (_ + - + LETRA + NUMERO)*
 ```
 <!--![](02-scanner/img/afd-simbolo.jpg)-->
 <img src="02-scanner/img/afd-simbolo.jpg" height="220">
@@ -75,9 +75,11 @@ SIMBOLO   ::= _
             | LETRA _SIMBOLO
             
 _SIMBOLO  ::= _
+            | -
             | LETRA
             | DIGITO
             | _ _SIMBOLO
+            | - _SIMBOLO
             | LETRA _SIMBOLO
             | DIGITO _SIMBOLO
      
