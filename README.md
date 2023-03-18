@@ -29,6 +29,7 @@ SIMBOLO -> ER: [a-zA-Z][\+\-\*\/\<\>\=\_][a-zA-Z]*[\+\-\*\/\<\>\=\_]*[0-9]*
 (a+b+c+d+e+f+g+h+i+j+k+l+m+n+o+p+q+r+s+t+u+v+w+x+y+z+A+B+C+D+E+F+G+H+I+J+K+L+M+N+O+P+Q+R+S+T+U+V+W+X+Y+Z)
 -->
 
+#### Syntactic tokens (Parser):
 ```
 VACIO   -> ER: () + nil
 ```
@@ -47,7 +48,6 @@ SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
 <!--![](02-scanner/img/afd-simbolo.jpg)-->
 <img src="02-scanner/img/afd-simbolo.jpg" height="220">
 
-#### Syntactic tokens (Parser):
 ```
 ATOMO, LISTA, EXPRESION
 ```
