@@ -13,19 +13,9 @@ pre {
 LETRA    = {a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, 
             A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z}
 
-ESPECIAL = {+, -, *, /, <, >, =, _}
+TERMINAL = {+, -, *, /, <, >, =, _, (, ), ., ,}
 
 DIGITO   = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-
-PARIZQ   = (
-
-PARDER   = )
-
-GUION    = -
-
-PUNTO    = .
-
-COMA     = ,
 ```
 <!---
 NUMERO  -> ER: -?[0-9]*(,[0-9]*)?
@@ -53,7 +43,7 @@ NUMERO  -> ER: DIGITO* + DIGITO*,DIGITO* + -DIGITO* + -DIGITO*,DIGITO*
 <img src="02-scanner/img/afd-numero.jpg" height="250">
 
 ```
-SIMBOLO -> ER: (LETRA + ESPECIAL) (LETRA + ESPECIAL + NUMERO)*
+SIMBOLO -> ER: (LETRA + TERMINAL) (LETRA + TERMINAL + NUMERO)*
 ```
 <!--![](02-scanner/img/afd-simbolo.jpg)-->
 <img src="02-scanner/img/afd-simbolo.jpg" height="220">
@@ -82,7 +72,7 @@ ATOMO     ::= SIMBOLO
 SIMBOLO   ::= LETRA
             | EPECIAL
             | SIMBOLO LETRA
-            | SIMBOLO ESPECIAL
+            | SIMBOLO TERMINAL
             | SIMBOLO DIGITO
      
 VACIO     ::= () | nil
@@ -92,7 +82,7 @@ LETRA     ::= a | b | c | d | e | f | g | h | i | j | k | l | m
             | A | B | C | D | E | F | G | H | I | J | K | L | M 
             | N | O | P | Q | R | S | T | U | V | W | X | Y | Z
             
-ESPECIAL  ::= + | - | * | / | < | > | = | _
+TERMINAL  ::= + | - | * | / | < | > | = | _
             
 DIGITO    ::= 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 
