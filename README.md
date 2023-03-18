@@ -70,10 +70,10 @@ ATOMO     ::= SIMBOLO
             | VACIO
           
 SIMBOLO   ::= LETRA
-            | EPECIAL
-            | SIMBOLO LETRA
-            | SIMBOLO TERMINAL
-            | SIMBOLO DIGITO
+            | TERMINAL
+            | LETRA SIMBOLO
+            | TERMINAL SIMBOLO
+            | DIGITO SIMBOLO
      
 VACIO     ::= () | nil
 
