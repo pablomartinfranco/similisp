@@ -1,1 +1,2 @@
 *.c linguist-language=C
+*.m4 linguist-language=text
