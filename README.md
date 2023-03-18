@@ -23,9 +23,9 @@ PARDER   = )
 
 GUION    = -
 
-COMA     = ,
+PUNTO    = .
 
-CENTINEL = .
+COMA     = ,
 ```
 <!---
 NUMERO  -> ER: -?[0-9]*(,[0-9]*)?
