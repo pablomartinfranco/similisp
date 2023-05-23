@@ -4,7 +4,7 @@ pre {
   tab-size: 4;
 }
 -->
-## SimiLisp DSL Parser
+## SimiLisp DSL parser
 
 ### Domain specific language similar to lisp
 
